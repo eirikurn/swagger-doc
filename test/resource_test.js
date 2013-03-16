@@ -16,6 +16,17 @@ describe('Resource', function() {
     });
   });
 
+  describe('#models', function() {
+    it('is an empty object by default', function() {
+      assert.equal(Object.keys(resource.models).length, 0);
+    });
+
+    it('can be initialized in constructor', function() {
+      resource = new Resource('/users', {models: {Tag: {id: 'Tag'}}});
+      assert.equal(resource.models.Tag.id, 'Tag');
+    });
+  });
+
   describe('#getApi()', function() {
     it('returns an empty api for new paths', function() {
       assert(!('/users/new' in resource.apis));

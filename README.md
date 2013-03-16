@@ -23,29 +23,35 @@ swagger.configure(server, {
 // Create a new swagger resource at specified route.
 docs = swagger.createResource("/payments");
 
+docs.models.Payment = {...};
+
 // Documents an api, all options are same as in swagger.
 docs.get("/payments/{id}", "Gets information about a specific payment", {
 	notes: "The information is very sexy.",
 	nickname: "getPayment",
 	parameters: [
-	  {name:"id", description: "Id of payment", required:true, dataType: "string", paramType: "path"}
+	    {name:"id", description: "Id of payment", required:true, dataType: "string", paramType: "path"}
 	]
 });
 
 // Another resource
-var docs = swagger.createResource("/account");
+var docs = swagger.createResource("/account", {
+    models: {
+        Account: {...}
+    }
+});
 
 // Swagger-doc has express-like api.
 docs.post('/account/authenticate', {
-  summary: "Authenticates a user"
+    summary: "Authenticates a user"
 });
 
 docs.get('/account/user', {
-  summary: "Returns the logged in user"
+    summary: "Returns the logged in user"
 });
 
 docs.delete('/account/user', {
-  summary: "Logs out the current user"
+    summary: "Logs out the current user"
 });
 ```
 
