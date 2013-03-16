@@ -1,0 +1,13 @@
+v0.2.0:
+  date: 2013-03-16
+  changes:
+    - Added options to createResource().
+    - Supports passing resource models to constructor.
+v0.1.1:
+  date: 2012-06-03
+  changes:
+    - Bug fixes.
+v0.1.1:
+  date: 2012-05-28
+  changes:
+    - Initial release.
