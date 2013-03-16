@@ -3,24 +3,12 @@
   "description": "Document your express/restify rest api and expose to swagger ui.",
   "version": "0.1.1",
   "homepage": "https://github.com/eirikurn/swagger-doc",
-  "author": {
-    "name": "Eirikur Nilsson",
-    "email": "eirikur@nilsson.is",
-    "url": "http://nilsson.is"
-  },
+  "author": "Eirikur Nilsson",
   "repository": {
     "type": "git",
     "url": "git://github.com/eirikurn/swagger-doc.git"
   },
-  "bugs": {
-    "url": "https://github.com/eirikurn/swagger-doc/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/eirikurn/swagger-doc/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "main": "lib/swagger-doc",
   "engines": {
     "node": ">0.6.0"
@@ -30,7 +18,18 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.3.9"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-mocha-cli": "~1.0.1",
+    "matchdep": "~0.1.1"
   },
-  "keywords": []
+  "keywords": [
+    "swagger",
+    "rest",
+    "api",
+    "docs",
+    "express",
+    "restify"
+  ]
 }
