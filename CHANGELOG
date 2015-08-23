@@ -1,3 +1,7 @@
+v0.3.0:
+  date: 2015-08-23
+  changes:
+    - Added support for `head` requests.
 v0.2.0:
   date: 2013-03-16
   changes:

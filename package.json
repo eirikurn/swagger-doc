@@ -1,7 +1,7 @@
 {
   "name": "swagger-doc",
   "description": "Document your express/restify rest api and expose to swagger ui.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/eirikurn/swagger-doc",
   "author": "Eirikur Nilsson",
   "repository": {
